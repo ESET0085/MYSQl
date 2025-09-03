@@ -1,0 +1,19 @@
+create database Society
+use Society
+
+CREATE table apt(Flat_No INT,Names VARCHAR(25),Phone_No VARCHAR(10)) 
+SELECT *from apt
+SELECT Flat_No FROM apt
+INSERT INTO apt(Flat_No,Names,Phone_No)VALUES(01,'Rahul',2345678910);
+INSERT INTO apt(Flat_No,Names,Phone_No)VALUES(02,'Mishra',2345672901),(03,'Naina',4578965421);
+
+Truncate table apt;
+
+CREATE table Employee(Emp_ID INT,Emp_Name VARCHAR(25),Dept VARCHAR(10),salary INT)
+SELECT *FROM Employee
+INSERT INTO Employee(Emp_ID,Emp_Name,Dept,Salary)
+VALUES(01,'Anshu','IT',56000),(02,'Bhanu','ML',75000),
+(03,'Radha','AI',56000),(04,'Madhu','BES',97000),(05,'Ghosh','AI',67)
+
+SELECT *FROM Employee WHERE Salary>56000
+SELECT *FROM Employee WHERE Salary>56000 AND Salary<97000
